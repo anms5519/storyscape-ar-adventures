@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom StoryScape colors
+				storyscape: {
+					purple: {
+						light: '#D6BCFA',
+						DEFAULT: '#9b87f5',
+						dark: '#8B5CF6',
+					},
+					peach: '#FDE1D3',
+					green: '#F2FCE2',
+					yellow: '#FEF7CD',
+					blue: '#D3E4FD',
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'rounded': ['Varela Round', 'sans-serif']
 			}
 		}
 	},
